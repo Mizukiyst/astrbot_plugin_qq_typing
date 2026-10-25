@@ -1,7 +1,7 @@
 name: astrbot_plugin_qq_typing
 display_name: QQ 正在输入提示
 author: mizukiyst
-version: 1.0.0
+version: 1.0.1
 description: 在 QQ 私聊模型回复期间显示正在输入；参考 menglimi/astrbot_plugin_private_companion 的实现机制。
 category: AI 增强
 support_platforms:
