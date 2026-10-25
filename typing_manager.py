@@ -68,6 +68,9 @@ class TypingManager:
             return False
         lease.deadlines[token] = asyncio.get_running_loop().time() + self.max_seconds
         self.events[token] = key
+        owner_task = asyncio.current_task()
+        if owner_task is not None:
+            owner_task.add_done_callback(lambda _: self.finish(event))
         lease.wake.set()
         if lease.task is None:
             lease.task = asyncio.create_task(self._run(key, lease), name="qq-typing:" + key[2])
