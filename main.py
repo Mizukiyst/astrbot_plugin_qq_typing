@@ -15,7 +15,7 @@ def _seconds(config, name, default, minimum, maximum):
     return value
 
 
-@register("astrbot_plugin_qq_typing", "Mizukiyst", "QQ 私聊正在输入提示", "1.0.0")
+@register("astrbot_plugin_qq_typing", "Mizukiyst", "QQ 私聊正在输入提示", "1.0.1")
 class QQTypingPlugin(Star):
     def __init__(self, context: Context, config=None):
         super().__init__(context, config)
