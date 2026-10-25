@@ -1,0 +1,17 @@
+{
+  "enabled": {
+    "description": "启用 QQ 私聊正在输入提示",
+    "type": "bool",
+    "default": true
+  },
+  "refresh_seconds": {
+    "description": "刷新间隔（秒，1～10）",
+    "type": "int",
+    "default": 4
+  },
+  "max_seconds": {
+    "description": "单条回复最长提示时间（秒，10～600）",
+    "type": "int",
+    "default": 300
+  }
+}
